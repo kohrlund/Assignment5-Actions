@@ -11,6 +11,9 @@ class TestCase(unittest.TestCase):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
 
+    def test3(self):
+        print("Will this run?")
+
 
 if __name__ == '__main__':
     unittest.main()

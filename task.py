@@ -4,6 +4,7 @@ def firstrun():
 
 def calcDate(d1, d2):
     numDays = d2 - d1
+    print("Number of days: " + numDays)
     return numDays
 
 

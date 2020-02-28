@@ -59,7 +59,7 @@ class TestCase(unittest.TestCase):
         assert(task.calcDate(date1, date2) == 10875)
 
         # Test with the dates switched
-        assert(task.calcDate(date2, date1) == 10875)
+        assert(task.calcDate(date2, date1) == -10875)
 
         print("Passed Date Test.")
 

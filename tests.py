@@ -26,7 +26,7 @@ class TestCase(unittest.TestCase):
         print("Passed Area Test.")
 
     def test4(self):
-        list = {}
+        list = None
         assert(task.getList(list) is None)
 
         list.append("Apple")

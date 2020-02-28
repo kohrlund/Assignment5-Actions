@@ -24,6 +24,7 @@ class TestCase(unittest.TestCase):
         # Test radius of -1 (invalid)
         expected = None
         assert(task.getArea(-1) is None)
+
         print("Passed Area Test.")
 
     def test4(self):

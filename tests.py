@@ -51,7 +51,7 @@ class TestCase(unittest.TestCase):
         assert(task.calcDate(date1, date2) == 0)
 
         date1 = date(1990, 5, 20)
-        date2 = date(1990, 6, 20)
+        date2 = date(1990, 5, 21)
         assert(task.calcDate(date1, date2) == 1)
 
         date1 = date(1990, 5, 20)

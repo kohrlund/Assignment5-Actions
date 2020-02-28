@@ -25,6 +25,25 @@ class TestCase(unittest.TestCase):
         assert(task.getArea(-1) is None)
         print("Passed Area Test.")
 
+    def test4(self):
+        list = {}
+        assert(task.getList(list) is None)
+
+        list.append("Apple")
+        assert(task.getList(list) is None)
+
+        list.append("Orange")
+        testList = task.getList(list)
+        assert(testList[0] == "Apple")
+        assert(testList[1] == "Orange")
+
+        list.append("Grapes")
+        testList = task.getList(list)
+        assert(testList[0] == "Apple")
+        assert(testList[1] == "Grapes")
+        
+        print("Passed List Test.")
+
 
 if __name__ == '__main__':
     unittest.main()

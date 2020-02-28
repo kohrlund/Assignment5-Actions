@@ -8,7 +8,7 @@ def getList(list):
         return None
 
     else:
-        newList = {}
+        newList = None
         newList.append(list[0])
         newList.append(list[len(list) - 1])
         return newList

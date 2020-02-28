@@ -1,5 +1,6 @@
 import unittest
 import task
+from datetime import date
 
 
 class TestCase(unittest.TestCase):
@@ -43,6 +44,19 @@ class TestCase(unittest.TestCase):
         assert(testList[1] == "Grapes")
 
         print("Passed List Test.")
+
+    def test5(self):
+        date1 = date(1990, 5, 20)
+        date2 = date(1990, 5, 20)
+        assert(task.calcDate(date1, date2) == 0)
+
+        date1 = date(1990, 5, 20)
+        date2 = date(1990, 6, 20)
+        assert(task.calcDate(date1, date2) == 1)
+
+        date1 = date(1990, 5, 20)
+        date2 = date(2020, 2, 27)
+        assert(task.calcDate(date1, date2) == 10875)
 
 
 if __name__ == '__main__':

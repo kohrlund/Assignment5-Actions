@@ -2,6 +2,11 @@ def firstrun():
     return "success"
 
 
+def calcDate(d1, d2):
+    numDays = d2 - d1
+    return numDays
+
+
 def getList(list):
     if len(list) == 0 or len(list) == 1:
         # print("List less than 2 objects.")

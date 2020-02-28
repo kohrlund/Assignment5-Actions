@@ -41,7 +41,7 @@ class TestCase(unittest.TestCase):
         testList = task.getList(list)
         assert(testList[0] == "Apple")
         assert(testList[1] == "Grapes")
-        
+
         print("Passed List Test.")
 
 
